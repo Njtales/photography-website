@@ -1,0 +1,154 @@
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reset margin and padding for specific elements
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-libre-baskerville);
+}
+
+// Hero section covering the viewport
+.hero {
+  height: 100vh;
+  position: relative;
+  color: var(--darkblack-color);
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // Cover the entire background, center the image, and do not repeat it
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+
+  
+  // Navigation styling
+  .navigation {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-nav,
+      .right-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 50px 0 0 50px;
+        font-size: 1.1rem;
+        z-index: 5;
+
+        a {
+          text-decoration: none;
+          color: var(--darkblack-color);
+          font-weight: bold;
+          margin-bottom: 35px; // Increase bottom margin to create more space between links
+          transition: color 0.3s ease;
+          z-index: 5;
+
+          &:hover {
+            color: var(--grey-color);
+          }
+        }
+      }
+
+      .right-nav {
+        margin: 50px 0 0 300px;
+        margin-right: 2%;
+        align-items: flex-end;
+      }
+
+      .svg-left-nav {
+        position: absolute;
+        width: 200px; // Increase width as needed
+        height: 200px; // Increase height as needed
+        margin-left: 3%;
+        margin-top: 1%;
+        z-index: 1;
+      }
+      .svg-right-nav {
+        position: absolute;
+        width: 200px; // Increase width as needed
+        height: 200px; // Increase height as needed
+        margin-left: -5%;
+        margin-top: -4%;
+        z-index: 1;
+      }
+      
+    .center-nav {
+      position: relative;
+      left: 50%;
+      bottom: -150%;
+      transform: translateX(-50%);
+  
+      h1 {
+        font-size: 2em; 
+        font-family: var(--font-libre-baskerville);
+        text-align: center;
+        color: var(--darkblack-color);
+        span{
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+
+  // Scroll indicator styling
+  .scroll-indicator {
+    @include flex-center;
+    position: relative; // Position it absolutely within the .hero container
+    bottom: -190%; // 20px from the bottom or as needed
+    left: 50%; // Center horizontally
+    transform: translateX(-50%); // Offset the translation by half of its width to center it
+    flex-direction: column;
+    width: 100%; // Ensure it spans the full width if needed for centering
+  
+    span {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      color: var(--darkblack-color); // Adjust the color if needed for visibility
+    }
+  
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid var(--grey-color);
+      display: inline-block;
+      margin-top: 8px;
+    }
+  }
+}
+
+
+
+// Responsive design adjustments
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left-nav,
+    .right-nav {
+      flex-direction: row;
+    }
+
+    .center-nav {
+      h1 {
+        font-size: 1.5em; // Adjust font size for smaller screens
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<svg
+   width="45mm"
+   height="40mm"
+   viewBox="0 0 45 40"
+   version="1.1"
+   id="left-nav"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#2d2d2d;stroke:#000000;stroke-width:0.154103"
+     id="rect4"
+     width="44.60408"
+     height="0.22126004"
+     x="0.07705152"
+     y="13.363676" />
+  <rect
+     style="fill:#2d2d2d;stroke:#000000;stroke-width:0.154103"
+     id="rect4-5"
+     width="44.60408"
+     height="0.22126004"
+     x="0.07705161"
+     y="26.322876" />
+  <rect
+     style="fill:#2d2d2d;stroke:#000000;stroke-width:0.148283"
+     id="rect4-30"
+     width="39.851719"
+     height="0.22928888"
+     x="0.074140906"
+     y="-44.925858"
+     transform="rotate(90)" />
+</svg>
