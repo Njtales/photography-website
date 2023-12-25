@@ -1,0 +1,43 @@
+// YourComponent.scss
+.photography-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; // Set to the height of your choice
+    padding: 0 10%; // Adjust the spacing from the edges of the viewport
+    box-sizing: border-box;
+    font-family: var(--font-playfair-display);// Replace with the actual font you want to use
+  
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      h2 {
+        font-size: 2em; // Adjust as needed
+        margin: 0 0 0.5em 0; // Space between the h2 and h3/p elements
+      }
+  
+      h3 {
+        font-size: 1.5em; // Adjust as needed
+      }
+  
+      p {
+        font-size: 1em; // Adjust as needed
+        font-style: italic;
+      }
+    }
+  
+    .fine-art, .portfolio {
+      flex: 1; // This will ensure that both sections take equal space
+    }
+  
+    .location {
+      flex: 0.5; // This will ensure that the middle section is smaller
+      border-left: 1px solid black; // Creates the line before the text
+      border-right: 1px solid black; // Creates the line after the text
+      padding: 0 2em; // Spaces out the borders from the text
+    }
+  }
+  

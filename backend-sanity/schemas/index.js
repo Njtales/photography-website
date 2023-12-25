@@ -1,4 +1,4 @@
-import Homepage from './Homepage'
+import Home from './Home'
 import Testimonials from './Testimonials'
 import Work from './Work'
-export const schemaTypes = [Homepage, Testimonials, Work]
+export const schemaTypes = [Home, Testimonials, Work]

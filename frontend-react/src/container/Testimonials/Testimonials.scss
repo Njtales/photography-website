@@ -1,0 +1,60 @@
+.testimonial-slider {
+    overflow-x: hidden;
+    .slick-list {
+      padding: 0; 
+    }
+    
+    .testimonial-slide {
+      display: flex;
+      align-items: center;
+      padding: 15% 0 10% 0; // Vertical padding for each slide
+      
+      .testimonial-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 17%;
+        width: 85%;
+  
+      .testimonial-text {
+        flex-basis: 50%; // Takes up half the width of the parent
+        padding-right: 15%; // Space between the text and the image
+        
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 4rem;
+          text-transform: capitalize;
+          font-weight: normal;
+        }
+  
+        p {
+          font-size: 1.3rem;
+          margin-bottom: 50%;
+          margin-top: 2rem;
+        }
+  
+        a {
+          text-decoration: none;
+          color: var(--darkgrey-color);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+        .testimonial-image {
+            flex-basis: 50%; // Takes up half the width of the parent
+            display: flex;
+            justify-content: center; // Aligns the image to the right
+            
+            img {
+                width: auto; // Adjust width as needed
+                height: 600px; // Adjust height as needed
+                max-width: 100%; // Ensures the image is responsive and doesn't overflow
+                border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+  
+  

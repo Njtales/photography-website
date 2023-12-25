@@ -17,6 +17,7 @@ import home_img17 from '../assets/images/home_img17.png';
 import home_img18 from '../assets/images/home_img18.png';
 import left_nav_svg from '../assets/images/left-nav-svg.svg';
 import right_nav_svg from '../assets/images/right-nav-svg.svg';
+import imgaboutme from '../assets/images/imgaboutme.png';
 
 export default {
   home_img01,
@@ -37,5 +38,6 @@ export default {
   home_img17,
   home_img18,
   left_nav_svg,
-  right_nav_svg
+  right_nav_svg,
+  imgaboutme
 };

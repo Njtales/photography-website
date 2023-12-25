@@ -4,15 +4,15 @@ export default {
     type: 'document',
     fields: [
         {
-            name: 'title',
-            title: 'Title',
+            name: 'name',
+            title: 'Name',
             type: 'string',
             validation: Rule => Rule.required()
         },
         {
-            name: 'description',
-            title: 'Description',
-            type: 'string',
+            name: 'feedback',
+            title: 'Feedback',
+            type: 'text',
             validation: Rule => Rule.required()
         },
         {

@@ -40,33 +40,33 @@ const Home = () => {
   } : {};
 
   return (
-    <div className="hero" style={backgroundStyle}>  {/* Apply the backgroundStyle here */}
+    <div className="home-hero" style={backgroundStyle}>  {/* Apply the backgroundStyle here */}
       
-      <div className="navigation">
+      <div className="home-navigation">
       <img 
           src={images.left_nav_svg}
           alt="left_nav_svg"
-          className="svg-left-nav" />
-        <div className="left-nav">
+          className="home-svg-left-nav" />
+        <div className="home-left-nav">
           
           
           <a href="/portfolio" >PORTFOLIO</a>
           <a href="/about">WHO I AM</a>
           <a href="/info">MORE INFO</a>
         </div>
-        <div className="center-nav">
+        <div className="home-center-nav">
           <h1>SNEHAL JATALE <br/>
             <span>PHOTOGRAPHY</span></h1>
         </div>
-        <div className="scroll-indicator">
+        <div className="home-scroll-indicator">
             <span>SCROLL FOR MORE</span>
-            <div className="arrow-down"></div>
+            <div className="home-arrow-down"></div>
         </div>
-        <div className="right-nav">
+        <div className="home-right-nav">
             <img 
             src={images.right_nav_svg}
             alt="right_nav_svg"
-            className="svg-right-nav" />
+            className="home-svg-right-nav" />
             <a href="/contact">CONTACT</a>
             <a href="/testimonials">TESTIMONIALS</a>
         </div>
